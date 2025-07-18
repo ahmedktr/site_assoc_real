@@ -1,0 +1,84 @@
+/* ==== PAGE ACCUEIL ==== */
+body{
+    background-color: #ffe4b5;
+}
+header img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.slogan {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* ==== NAVIGATION UL (accueil) ==== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+
+nav ul li a:hover {
+  background-color: #bbb;
+}
+
+/* ==== BOUTONS DE L’ACCUEIL ==== */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #0077b6;
+}
+
+.btn:hover {
+  background-color: #0099cc;
+}
+
+/* ==== SECTIONS ==== */
+main section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #006699;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}

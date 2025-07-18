@@ -1,0 +1,162 @@
+/* ==== RESET ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:   #ffe4b5
+}
+
+
+/* ==== HEADER ==== */
+header {
+  background-color: #e69a00; /* orange vif */
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* ==== NAVIGATION ==== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+
+nav ul li a:hover {
+  background-color: #bbb;
+}
+
+/* ==== SECTION COMMUNE (Contact / Connexion / Inscription) ==== */
+.contact-section {
+  background-color: #e69a00;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+/* ==== FORMULAIRES ==== */
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+form button {
+  margin-top: 20px;
+  background-color: #00bfff;
+  color: black;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: 2px solid #0077b6;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0099cc;
+}
+
+/* ==== BOUTONS ACCUEIL ==== */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #0077b6;
+}
+
+.btn:hover {
+  background-color: #0099cc;
+}
+
+/* ==== SECTIONS GENERALES ==== */
+main section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #006699;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}

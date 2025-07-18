@@ -1,0 +1,128 @@
+/* ==== RESET ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+  color: #000;
+  
+    background-color: #ffe4b5;
+}
+
+
+/* ==== HEADER ==== */
+header {
+  background-color: #ffe4b5; /* orange vif */
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* ==== NAVIGATION ==== */
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.nav-menu a {
+  background-color: #ccc;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+
+.nav-menu a:hover {
+  background-color: #bbb;
+}
+
+/* ==== BOUTONS Connexion / Inscription ==== */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions a {
+  background-color: #00bfff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #0077b6;
+}
+
+.actions a:hover {
+  background-color: #0099cc;
+}
+
+/* ==== SECTION CONTACT ==== */
+.contact-section {
+  background-color: #ffe4b5;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+/* ==== FORMULAIRE ==== */
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* ==== BOUTON ENVOYER ==== */
+form button {
+  margin-top: 20px;
+  background-color: #00bfff;
+  color: black;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: 2px solid #0077b6;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0099cc;
+}

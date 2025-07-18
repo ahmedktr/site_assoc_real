@@ -1,0 +1,158 @@
+/* ==== RESET ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+}
+
+/* ==== TITRES ==== */
+h2, h3 {
+  color: #0e1e66;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ==== SECTION INTRO ==== */
+.hero {
+  background-color: #ffe4b5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #222;
+}
+
+/* ==== VALEURS EN ICÔNES ==== */
+.valeurs {
+  background-color: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.valeurs-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.valeurs-icons .icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.valeurs-icons div {
+  text-align: center;
+  font-weight: bold;
+  color: #0e1e66;
+}
+
+/* ==== DÉTAIL DES VALEURS ==== */
+.explications {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+.explications p {
+  margin-bottom: 10px;
+}
+
+/* ==== NOTRE ACTION ==== */
+.action {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.action .texte {
+  max-width: 400px;
+  text-align: left;
+}
+
+.action .image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* ==== NOTRE ÉQUIPE ==== */
+.equipe {
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+}
+
+.equipe-membres {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.equipe-membres div {
+  text-align: center;
+  max-width: 200px;
+}
+
+.equipe-membres img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* ==== NAVIGATION ==== */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 100px; /* Ajuste la taille du logo si nécessaire */
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0e1e66;
+}
