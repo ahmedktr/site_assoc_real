@@ -1,195 +1,84 @@
-/* ---- RESET SIMPLE ---- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* ==== PAGE ACCUEIL ==== */
+body{
+    background-color: #ffe4b5;
+}
+header img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #000;
-}
-
-/* ---- SECTIONS GÉNÉRALES ---- */
-section {
-  padding: 40px 20px;
+.slogan {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1.1rem;
   text-align: center;
 }
 
-/* ---- BANNIÈRE D'ACCUEIL ---- */
-header.hero {
-  background-color: #ffe4b5; /* beige pâle */
-  padding: 60px 20px;
-}
-
-header.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.hero .btn-container {
+/* ==== NAVIGATION UL (accueil) ==== */
+nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+
+nav ul li a:hover {
+  background-color: #bbb;
+}
+
+/* ==== BOUTONS DE L’ACCUEIL ==== */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 5px;
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  border: 2px solid #0077b6;
 }
 
-.btn-yellow {
-  background-color: #f6b73c;
-  color: #000;
+.btn:hover {
+  background-color: #0099cc;
 }
 
-.btn-blue {
-  background-color: #0e1e66;
-  color: #fff;
+/* ==== SECTIONS ==== */
+main section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
 }
 
-.btn-yellow:hover {
-  background-color: #e0a52c;
-}
-
-.btn-blue:hover {
-  background-color: #0a1544;
-}
-
-/* ---- CHIFFRES CLÉS ---- */
-.stats {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px 0;
-  flex-wrap: wrap;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-
-.stat {
+/* ==== FOOTER ==== */
+footer {
+  background-color: #006699;
+  color: white;
   text-align: center;
-  font-size: 1.1rem;
+  padding: 15px;
+  margin-top: 30px;
 }
 
-.stat-icon {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-/* ---- ATELIERS ---- */
-.ateliers {
-  background-color: #f8f9fc;
-}
-
-.ateliers h2 {
-  color: #0e1e66;
-  margin-bottom: 20px;
-}
-
-.ateliers-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card-atelier {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 160px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card-atelier h3 {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.card-atelier .btn-yellow {
-  margin-top: 10px;
-}
-
-/* ---- ARTICLES ---- */
-.articles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 40px 20px;
-}
-
-.articles img {
-  width: 300px;
-  height: auto;
-  border-radius: 5px;
-}
-
-.articles .text {
-  max-width: 400px;
-  text-align: left;
-}
-
-.articles h2 {
-  color: #0e1e66;
-  margin-bottom: 10px;
-}
-
-/* ---- ÉQUIPE ---- */
-.equipe {
-  background-color: #eee;
-}
-
-.equipe h2 {
-  margin-bottom: 30px;
-}
-
-.equipe-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.equipe-member {
-  max-width: 200px;
-}
-
-/* ---- NEWSLETTER ---- */
-.newsletter {
-  padding: 40px 20px;
-}
-
-.newsletter h3 {
-  margin-bottom: 15px;
-  color: #0e1e66;
-}
-
-.newsletter .btn-yellow {
-  margin-top: 10px;
-}
-
-/* ---- NAVIGATION ---- */
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
+footer a {
+  color: white;
+  text-decoration: underline;
 }
