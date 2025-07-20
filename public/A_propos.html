@@ -10,6 +10,44 @@
   <header>
     <h1>À propos de nous</h1>
   </header>
+  <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
+    <svg class="zoom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
+    </svg>
+</button>
+
+<style>
+    .zoom-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #0056b3;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        transition: background 0.3s;
+        z-index: 999;
+    }
+    .zoom-btn:hover {
+        background: #004080;
+    }
+    .zoom-icon {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+</style>
+
+<script>
+    let zoomed = false;
+    function toggleZoom() {
+        document.body.style.fontSize = zoomed ? "1em" : "1.5em";
+        zoomed = !zoomed;
+    }
+</script>
 
   <nav>
     <ul>

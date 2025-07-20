@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/inscription.css">>
-    <title>Inscription aux Ateliers - Inclusion Numérique</title>
- 
+    <link rel="stylesheet" href="css/newsletter.css">
+    <title>Inscription à la Newsletter - Inclusion Numérique</title>
+
 <body>
 
     <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
@@ -54,41 +54,19 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <h1>Inscription aux Ateliers</h1>
+    <h1>Inscription à la Newsletter</h1>
+    <p>Restez informé(e) de nos prochains ateliers, actualités, et conseils pour mieux maîtriser le numérique.</p>
 
     <form action="#" method="post">
-        <label for="lastname">Nom *</label>
-        <input type="text" id="lastname" name="lastname" required>
-
-        <label for="firstname">Prénom *</label>
-        <input type="text" id="firstname" name="firstname" required>
-
-        <label for="email">Adresse Email *</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Numéro de Téléphone *</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="workshop">Choix de l'Atelier *</label>
-        <select id="workshop" name="workshop" required>
-            <option value="">-- Sélectionnez un atelier --</option>
-            <option value="initiation">Initiation au Numérique</option>
-            <option value="administratif">Démarches Administratives en Ligne</option>
-            <option value="emploi">Compétences Numériques pour l’Emploi</option>
-            <option value="securite">Sécurité Numérique</option>
-            <option value="accompagnement">Accompagnement Personnalisé</option>
-        </select>
-
-        <label for="message">Message ou Informations Complémentaires</label>
-        <textarea id="message" name="message" rows="4" placeholder="Vos disponibilités, besoins spécifiques..."></textarea>
-
-        <button type="submit">S'inscrire</button>
+        <input type="text" name="name" placeholder="Votre prénom" required>
+        <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+        <button type="submit">Je m’inscris</button>
     </form>
 
     <div class="footer">
+        <p>Vous pouvez vous désinscrire à tout moment via le lien présent dans nos emails.</p>
         <p>© 2025 Association pour l’Inclusion Numérique</p>
     </div>
-
 </head>
 </body>
 </html>
