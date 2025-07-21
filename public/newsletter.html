@@ -1,72 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/newsletter.css">
-    <title>Inscription à la Newsletter - Inclusion Numérique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/css_globale.css">
+  <title>Inscription à la Newsletter - Inclusion Numérique</title>
+</head>
 
 <body>
 
-    <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
-    <svg class="zoom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
-    </svg>
-</button>
+  <h1>Inscription à la Newsletter</h1>
 
-<style>
-    .zoom-btn {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: #0056b3;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 0 5px rgba(0,0,0,0.2);
-        transition: background 0.3s;
-        z-index: 999;
-    }
-    .zoom-btn:hover {
-        background: #004080;
-    }
-    .zoom-icon {
-        width: 20px;
-        height: 20px;
-        fill: white;
-    }
-</style>
+ <nav>
+      <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+      <li><a href="historique.html">Historique</a></li>
+      <li><a href="A_propos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
+    </ul>
+  </nav>
 
-<script>
-    let zoomed = false;
-    function toggleZoom() {
-        document.body.style.fontSize = zoomed ? "1em" : "1.5em";
-        zoomed = !zoomed;
-    }
-</script>
-    <nav class="nav-menu">
-      <a href="index.html">Accueil</a>
-      <a href="actualites.html">Actualités</a>
-      <a href="historique.html">Historique</a>
-      <a href="a-propos.html">À propos</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <p>
+    Restez informé(e) de nos prochains ateliers, actualités, et conseils pour mieux maîtriser le numérique.
+  </p>
 
-    <h1>Inscription à la Newsletter</h1>
-    <p>Restez informé(e) de nos prochains ateliers, actualités, et conseils pour mieux maîtriser le numérique.</p>
+  <form action="#" method="post">
+    <label for="name">Prénom :</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-    <form action="#" method="post">
-        <input type="text" name="name" placeholder="Votre prénom" required>
-        <input type="email" name="email" placeholder="Votre adresse e-mail" required>
-        <button type="submit">Je m’inscris</button>
-    </form>
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-    <div class="footer">
-        <p>Vous pouvez vous désinscrire à tout moment via le lien présent dans nos emails.</p>
-        <p>© 2025 Association pour l’Inclusion Numérique</p>
-    </div>
-</head>
+    <button type="submit">Je m’inscris</button>
+  </form>
+
+  <p>
+    Vous pouvez vous désinscrire à tout moment via le lien présent dans nos emails.
+  </p>
+
+  <footer>
+    <p>© 2025 Association pour l’Inclusion Numérique</p>
+  </footer>
+
 </body>
 </html>

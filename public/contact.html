@@ -3,73 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Association</title>
-  <link rel="stylesheet" href="css/contact.css" />
+  <title>Contact - Association Inclusion Numérique</title>
+  <link rel="stylesheet" href="css/css_globale.css">
 </head>
+
 <body>
 
+  <!-- Bouton Zoom -->
   <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
     <svg class="zoom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
+      <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
     </svg>
-</button>
+  </button>
 
-<style>
-    .zoom-btn {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: #0056b3;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 0 5px rgba(0,0,0,0.2);
-        transition: background 0.3s;
-        z-index: 999;
-    }
-    .zoom-btn:hover {
-        background: #004080;
-    }
-    .zoom-icon {
-        width: 20px;
-        height: 20px;
-        fill: white;
-    }
-</style>
-
-<script>
-    let zoomed = false;
-    function toggleZoom() {
-        document.body.style.fontSize = zoomed ? "1em" : "1.5em";
-        zoomed = !zoomed;
-    }
-</script>
+  <!-- En-tête avec logo -->
   <header>
+    <img src="image/logo.png" alt="Logo de l'association" />
     <h1>Contact</h1>
-    <nav class="nav-menu">
-      <a href="index.html">Accueil</a>
-      <a href="actualites_bolg.html">Actualités</a>
-      <a href="ateliers.html">Ateliers</a>
-      <a href="historique.html">Historique</a>
-      <a href="A_propos.html">À propos</a>
-    </nav>
-    <div class="actions">
-      <a href="inscription.html">Inscription</a>
-      <a href="connexion.html">Connexion</a>
-    </div>
   </header>
 
-  <!-- FORMULAIRE DE CONTACT -->
-  <main class="contact-section">
-    <h2>Nous contacter</h2>
+  <!-- Menu de navigation commun -->
+  <nav>
+      <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+      <li><a href="historique.html">Historique</a></li>
+      <li><a href="A_propos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section formulaire -->
+  <section>
+    <h2 class="titre-bleu">Nous contacter</h2>
     <p style="text-align: center; margin-bottom: 30px;">
-      Une question, une remarque ou une demande particulière ? <br>
+      Une question, une remarque ou une demande particulière ?<br>
       Remplissez ce formulaire et nous vous répondrons rapidement.
     </p>
 
-    <form action="/envoyer-contact" method="post">
+    <form action="#" method="post">
       <label for="nom">Nom :</label>
       <input type="text" id="nom" name="nom" required />
 
@@ -79,11 +55,17 @@
       <label for="objet">Objet :</label>
       <input type="text" id="objet" name="objet" required />
 
-      <label for="message">Message</label>
+      <label for="message">Message :</label>
       <textarea id="message" name="message" rows="6" required></textarea>
 
-      <button type="submit">Envoyer</button>
+      <button type="submit" class="btn">Envoyer</button>
     </form>
-  </main>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 Association pour l’Inclusion Numérique</p>
+  </footer>
+
 </body>
 </html>

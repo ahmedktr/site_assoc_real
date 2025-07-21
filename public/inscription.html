@@ -1,94 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/inscription.css">>
-    <title>Inscription aux Ateliers - Inclusion Numérique</title>
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription aux Ateliers - Inclusion Numérique</title>
+  <link rel="stylesheet" href="css/css_globale.css">
+</head>
+
 <body>
 
-    <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
+  <!-- BOUTON ZOOM -->
+  <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
     <svg class="zoom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
+      <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
     </svg>
-</button>
+  </button>
 
-<style>
-    .zoom-btn {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: #0056b3;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 0 5px rgba(0,0,0,0.2);
-        transition: background 0.3s;
-        z-index: 999;
-    }
-    .zoom-btn:hover {
-        background: #004080;
-    }
-    .zoom-icon {
-        width: 20px;
-        height: 20px;
-        fill: white;
-    }
-</style>
-
-<script>
-    let zoomed = false;
-    function toggleZoom() {
-        document.body.style.fontSize = zoomed ? "1em" : "1.5em";
-        zoomed = !zoomed;
-    }
-</script>
-    <nav class="nav-menu">
-      <a href="index.html">Accueil</a>
-      <a href="actualites.html">Actualités</a>
-      <a href="historique.html">Historique</a>
-      <a href="a-propos.html">À propos</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
+  <!-- EN-TÊTE -->
+  <header>
+    <img src="image/logo.png" alt="Logo de l'association" />
     <h1>Inscription aux Ateliers</h1>
+  </header>
+
+  <!-- NAVIGATION -->
+ <nav>
+      <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+      <li><a href="historique.html">Historique</a></li>
+      <li><a href="A_propos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
+    </ul>
+  </nav>
+
+  <!-- FORMULAIRE -->
+  <section>
+    <h2 class="titre-bleu">Formulaire d'inscription</h2>
 
     <form action="#" method="post">
-        <label for="lastname">Nom *</label>
-        <input type="text" id="lastname" name="lastname" required>
+      <label for="lastname">Nom *</label>
+      <input type="text" id="lastname" name="lastname" required>
 
-        <label for="firstname">Prénom *</label>
-        <input type="text" id="firstname" name="firstname" required>
+      <label for="firstname">Prénom *</label>
+      <input type="text" id="firstname" name="firstname" required>
 
-        <label for="email">Adresse Email *</label>
-        <input type="email" id="email" name="email" required>
+      <label for="email">Adresse Email *</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="phone">Numéro de Téléphone *</label>
-        <input type="tel" id="phone" name="phone" required>
+      <label for="phone">Numéro de Téléphone *</label>
+      <input type="tel" id="phone" name="phone" required>
 
-        <label for="workshop">Choix de l'Atelier *</label>
-        <select id="workshop" name="workshop" required>
-            <option value="">-- Sélectionnez un atelier --</option>
-            <option value="initiation">Initiation au Numérique</option>
-            <option value="administratif">Démarches Administratives en Ligne</option>
-            <option value="emploi">Compétences Numériques pour l’Emploi</option>
-            <option value="securite">Sécurité Numérique</option>
-            <option value="accompagnement">Accompagnement Personnalisé</option>
-        </select>
+      <label for="workshop">Choix de l'Atelier *</label>
+      <select id="workshop" name="workshop" required>
+        <option value="">-- Sélectionnez un atelier --</option>
+        <option value="initiation">Initiation au Numérique</option>
+        <option value="administratif">Démarches Administratives en Ligne</option>
+        <option value="emploi">Compétences Numériques pour l’Emploi</option>
+        <option value="securite">Sécurité Numérique</option>
+        <option value="accompagnement">Accompagnement Personnalisé</option>
+      </select>
 
-        <label for="message">Message ou Informations Complémentaires</label>
-        <textarea id="message" name="message" rows="4" placeholder="Vos disponibilités, besoins spécifiques..."></textarea>
+      <label for="message">Message ou Informations Complémentaires</label>
+      <textarea id="message" name="message" rows="4" placeholder="Vos disponibilités, besoins spécifiques..."></textarea>
 
-        <button type="submit">S'inscrire</button>
+      <button type="submit" class="btn">S'inscrire</button>
     </form>
+  </section>
 
-    <div class="footer">
-        <p>© 2025 Association pour l’Inclusion Numérique</p>
-    </div>
+  <!-- PIED DE PAGE -->
+  <footer>
+    <p>© 2025 Association pour l’Inclusion Numérique</p>
+  </footer>
 
-</head>
 </body>
 </html>
