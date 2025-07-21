@@ -8,29 +8,17 @@
 </head>
 <body>
 
+  <!-- ZOOM BUTTON ajouté dynamiquement par JS -->
+
   <header>
     <h1>Association pour l’Inclusion Numérique</h1>
     <img src="image/logo.png" alt="Logo de l'association" />
     <p class="slogan">Le numérique pour tous, sans exception.</p>
   </header>
 
-<button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
-    <svg class="zoom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
-    </svg>
-</button>
-
-
-
-<script>
-    let zoomed = false;
-    function toggleZoom() {
-        document.body.style.fontSize = zoomed ? "1em" : "1.5em";
-        zoomed = !zoomed;
-    }
-</script>
- <nav>
-      <ul>
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
       <li><a href="index.html">Accueil</a></li>
       <li><a href="actualites.html">Actualités</a></li>
       <li><a href="historique.html">Historique</a></li>
@@ -43,7 +31,7 @@
     </ul>
   </nav>
 
-
+  <!-- CONTENU PRINCIPAL -->
   <main>
     <section class="mission">
       <h2>Notre mission</h2>
@@ -55,17 +43,21 @@
     <section class="actions">
       <h2>Participer</h2>
       <div class="buttons">
-        <a class="btn" href="Ateliers.html">Voir les ateliers</a>
+        <a class="btn" href="ateliers.html">Voir les ateliers</a>
         <a class="btn" href="actualites.html">Lire les actualités</a>
         <a class="btn" href="newsletter.html">S’abonner à la newsletter</a>
       </div>
     </section>
   </main>
 
+  <!-- PIED DE PAGE -->
   <footer>
     <p>© 2025 Association pour l’Inclusion Numérique</p>
     <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
   </footer>
+
+  <!-- SCRIPT ZOOM -->
+  <script src="js/zoom.js"></script>
 
 </body>
 </html>

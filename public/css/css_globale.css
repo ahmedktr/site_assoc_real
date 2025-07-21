@@ -210,3 +210,25 @@ footer {
     padding: 20px;
   }
 }
+.zoom-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: orange;
+  border: none;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.zoom-btn:hover {
+  transform: scale(1.1);
+}
+.zoom-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
