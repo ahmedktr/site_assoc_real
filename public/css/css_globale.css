@@ -256,3 +256,32 @@ footer {
 .fade-in {
   animation: fadeIn 1s ease-out both;
 }
+.btn-franceconnect {
+  display: inline-flex;
+  align-items: center;
+  background-color: #003f7f;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  gap: 10px;
+}
+
+.btn-franceconnect:hover {
+  background-color: #002b5c;
+  transform: scale(1.05);
+}
+
+.logo-fc {
+  width: 24px;
+  height: auto;
+}
+/* ==== ZOOM ==== */
+.zoomed {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}

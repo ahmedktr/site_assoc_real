@@ -23,8 +23,8 @@
   </header>
 
   <!-- NAVIGATION -->
- <nav>
-      <ul>
+  <nav>
+    <ul>
       <li><a href="index.html">Accueil</a></li>
       <li><a href="actualites.html">Actualités</a></li>
       <li><a href="historique.html">Historique</a></li>
@@ -37,10 +37,23 @@
     </ul>
   </nav>
 
-  <!-- FORMULAIRE -->
+  <!-- SECTION FORMULAIRE -->
   <section>
     <h2 class="titre-bleu">Formulaire d'inscription</h2>
 
+    <!-- Bouton FranceConnect -->
+ <div style="text-align: center; margin-bottom: 30px;">
+  <a href="https://app.franceconnect.gouv.fr/api/v1/authorize?client_id=TON_CLIENT_ID&redirect_uri=TON_REDIRECT_URI&scope=openid&response_type=code"
+     class="btn-franceconnect" style="display: inline-flex; align-items: center; gap: 10px; background-color: #003f7f; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+    
+    <img src="image/franceID.webp" alt="Connexion via FranceConnect" style="width: 24px; height: 24px;">
+    
+    <span>S'inscrire avec FranceConnect</span>
+  </a>
+</div>
+
+
+    <!-- Formulaire classique -->
     <form action="#" method="post">
       <label for="lastname">Nom *</label>
       <input type="text" id="lastname" name="lastname" required>
@@ -79,3 +92,8 @@
 </body>
 <script src="js/zoom.js"></script>
 </html>
+<script>
+  // Fonction pour activer/désactiver le zoom
+  function toggleZoom() {
+    document.body.classList.toggle('zoomed');
+  }
