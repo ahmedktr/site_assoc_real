@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #e6f0ff, #f7f9fc);
+  background: linear-gradient(to bottom right, #fff8ef, #f7f9fc);
   color: #222;
   line-height: 1.7;
   font-size: 16px;
@@ -17,13 +17,13 @@ body {
 
 /* ==== HEADER ==== */
 header {
-  background: linear-gradient(90deg, #0057a8, #0077cc);
+  background: linear-gradient(90deg, #f7931e, #ffcc00);
   color: #fff;
   text-align: center;
   padding: 50px 20px 30px;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 87, 168, 0.3);
-  border-bottom: 5px solid #00b4d8;
+  box-shadow: 0 10px 30px rgba(247, 147, 30, 0.3);
+  border-bottom: 5px solid #003f7f;
   animation: fadeInDown 1s ease-in;
 }
 
@@ -72,7 +72,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-weight: 600;
-  color: #0057a8;
+  color: #f7931e;
   padding: 10px 18px;
   border-radius: 6px;
   transition: 0.3s ease;
@@ -80,9 +80,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #0057a8;
+  background-color: #f7931e;
   color: #fff;
-  border-color: #0057a8;
+  border-color: #f7931e;
 }
 
 /* ==== SECTIONS ==== */
@@ -102,7 +102,7 @@ section {
 }
 
 .titre-bleu {
-  color: #0077cc;
+  color: #003f7f;
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -110,7 +110,7 @@ section {
 
 /* ==== BOUTON ==== */
 button, .btn {
-  background-color: #0057a8;
+  background-color: #f7931e;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -123,7 +123,7 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-  background-color: #003f7f;
+  background-color: #e67e00;
 }
 
 /* ==== FORMULAIRES ==== */
@@ -133,7 +133,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: #fdfdfd;
+  background-color: #fffdf5;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.05);
@@ -150,7 +150,7 @@ form textarea {
 
 form label {
   font-weight: 600;
-  color: #333;
+  color: #003f7f;
 }
 
 /* ==== ZOOM BOUTON ==== */
@@ -158,7 +158,7 @@ form label {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #00b4d8;
+  background: #f7931e;
   border: none;
   padding: 14px;
   border-radius: 50%;
@@ -172,7 +172,7 @@ form label {
   transform: scale(1.1);
 }
 
-.zoom-btn .zoom-icon {
+.zoom-icon {
   width: 24px;
   height: 24px;
   fill: white;
@@ -186,7 +186,7 @@ footer {
   padding: 25px;
   margin-top: 60px;
   font-size: 0.9rem;
-  border-top: 3px solid #9bb624;
+  border-top: 3px solid #f7931e;
 }
 
 /* ==== RESPONSIVE ==== */
@@ -209,26 +209,20 @@ footer {
     margin: 20px;
     padding: 20px;
   }
-}
-.zoom-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: orange;
+}.btn-inscription {
+  background-color: #f7931e;
+  color: white;
   border: none;
-  padding: 14px;
-  border-radius: 50%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-.zoom-btn:hover {
-  transform: scale(1.1);
-}
-.zoom-icon {
-  width: 24px;
-  height: 24px;
-  fill: white;
+
+.btn-inscription:hover {
+  background-color: #e67e00;
 }
 

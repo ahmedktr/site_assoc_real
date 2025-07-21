@@ -2,106 +2,83 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>À propos - Inclusion Numérique</title>
-  <link rel="stylesheet" href="css/css_globale.css"> 
-   
-  
+  <link rel="stylesheet" href="css/css_globale.css">
 </head>
 <body>
-  <header>
-    <h1>À propos de nous</h1>
-    <img src="image/logo.png" alt="Logo de l'association" />
+
+  <!-- Bandeau haut -->
+  <header class="bandeau-haut">
+    <h1>A propos</h1>
+     <img src="image/logo.png" alt="Logo de l'association" />
   </header>
-  <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
-    <svg class="zoom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.39a1 1 0 0 0 1.42-1.42l-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z"/>
-    </svg>
-</button>
 
-
-
-
-
-  <nav>
-     <ul>
+  <!-- Menu de navigation -->
+  <nav class="menu-principal">
+    <ul>
       <li><a href="index.html">Accueil</a></li>
-      <li><a href="actualites.html">Actualités</a></li>
+      <li><a href="actualites.html">Actualités/Blog</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
       <li><a href="historique.html">Historique</a></li>
-      <li><a href="A_propos.html">À propos</a></li>
+      <li><a href="A_propos.html" class="active">A propos</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="inscription.html">Inscription</a></li>
       <li><a href="connexion.html">Connexion</a></li>
-      <li><a href="newsletter.html">Newsletter</a></li>
-      <li><a href="ateliers.html">Ateliers</a></li>
     </ul>
   </nav>
 
-  <!-- SECTION: INTRODUCTION -->
-  <section class="hero">
-    <h2 class="titre-bleu">À propos ?</h2>
-    <p>
-      L'association pour l’Inclusion Numérique et la Lutte contre l’Illectronisme <br>
-      <em>⇒ texte de présentation (flavor text)</em>
-    </p>
-  </section>
+  <!-- Contenu principal -->
+  <main class="contenu-a-propos">
 
-  <!-- SECTION: VALEURS -->
-  <section class="valeurs">
-    <div class="valeurs-icons">
-      <div><span class="icon">🧍‍♂️</span><br><strong>Accessibilité</strong></div>
-      <div><span class="icon">🤝</span><br><strong>Solidarité</strong></div>
-      <div><span class="icon">❤️</span><br><strong>Bienveillance</strong></div>
-      <div><span class="icon">🏹</span><br><strong>Autonomie</strong></div>
-    </div>
-  </section>
+    <!-- Section : Notre histoire -->
+  
+    <!-- Section : Notre équipe -->
+    <section class="bloc-orange">
+      <h2>Notre équipe :</h2>
+      <p>
+        Nous sommes une équipe de bénévoles, formateurs et coordinateurs passionnés, œuvrant ensemble pour accompagner les publics
+        en difficulté face au numérique.
+      </p>
+      <ul>
+        <li>Bernard Dubois - Président</li>
+        <li>Sophie Laurent - Trésorière</li>
+        <li>Yassin Benali - Responsable communication</li>
+      </ul>
+    </section>
 
-  <!-- SECTION: DÉTAIL DES VALEURS -->
-  <section class="explications">
-    <p><strong>Accessibilité :</strong> rendre le numérique compréhensible et utilisable par tous</p>
-    <p><strong>Solidarité :</strong> agir ensemble pour réduire les inégalités numériques</p>
-    <p><strong>Bienveillance :</strong> accompagner sans jugement à chaque étape</p>
-    <p><strong>Autonomie :</strong> aider chacun à progresser à son rythme avec confiance</p>
-  </section>
+    <!-- Section : Nos valeurs -->
+    <section class="bloc-orange">
+      <h2>Nos valeurs :</h2>
+      <ul>
+        <li>Accessibilité pour tous</li>
+        <li>Solidarité et entraide</li>
+        <li>Respect de la vie privée et des données</li>
+        <li>Apprentissage par la pratique</li>
+      </ul>
+    </section>
 
-  <!-- SECTION: NOTRE ACTION -->
-  <section class="action">
-    <div class="action-content">
-      <div class="texte">
-        <h2 class="titre-bleu">Notre action</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </p>
-      </div>
-      <div class="image">
-        <img src="images/img1.png" alt="Homme senior utilisant un ordinateur portable" role="img" />
-      </div>
-    </div>
-  </section>
+    <!-- Section : Nos partenaires -->
+    <section class="bloc-orange">
+      <h2>Nos partenaires :</h2>
+      <ul>
+        <li>Mairie de Maubeuge</li>
+        <li>GRETA Grand Hainaut</li>
+        <li>Centre Social Maubeuge</li>
+      </ul>
+    </section>
 
-  <!-- SECTION: ÉQUIPE -->
-  <section class="equipe">
-    <h2 class="titre-bleu">Notre équipe</h2>
-    <div class="equipe-membres">
-      <div>
-        <img src="https://via.placeholder.com/80" alt="Profil">
-        <p>Lorem Ipsum is simply dummy text of the printing and</p>
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/80" alt="Profil">
-        <p>Lorem Ipsum is simply dummy text of the printing and</p>
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/80" alt="Profil">
-        <p>Lorem Ipsum is simply dummy text of the printing and</p>
-      </div>
-    </div>
-  </section>
+  </main>
 
-  <footer>
+  <!-- Pied de page -->
+  <footer class="footer">
     <p>© 2025 Association pour l’Inclusion Numérique</p>
   </footer>
+
 </body>
-<script src="js/zoom.js"></script>
 </html>
+<script src="js/zoom.js"></script>
+<script>
+  // Fonction pour activer/désactiver le zoom
+  function toggleZoom() {
+    document.body.classList.toggle('zoomed');
+  }
