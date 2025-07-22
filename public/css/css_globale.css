@@ -7,9 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(-45deg, #fff8ef, #f7f9fc, #ffcc00, #f7931e);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(to bottom right, #fff8ef, #f7f9fc);
   color: #222;
   line-height: 1.7;
   font-size: 16px;
@@ -41,6 +39,18 @@ header h1 {
   letter-spacing: 1px;
 }
 
+/* ==== ANIMATION ==== */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ==== NAVIGATION ==== */
 nav {
   background: #ffffff;
@@ -65,7 +75,7 @@ nav ul li a {
   color: #003f7f;
   padding: 10px 18px;
   border-radius: 6px;
-  transition: all 0.3s ease, transform 0.2s ease;
+  transition: 0.3s ease;
   border: 1px solid transparent;
 }
 
@@ -73,7 +83,6 @@ nav ul li a:hover {
   background-color: #003f7f;
   color: #fff;
   border-color: #003f7f;
-  transform: scale(1.05);
 }
 
 /* ==== SECTIONS ==== */
@@ -85,12 +94,11 @@ section {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
   animation: fadeIn 1.2s ease;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-section:hover {
-  transform: translateY(-5px) scale(1.01);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .titre-bleu {
@@ -101,7 +109,7 @@ section:hover {
 }
 
 /* ==== BOUTON ==== */
-button, .btn, .btn-inscription {
+button, .btn {
   background-color: #003f7f;
   color: #fff;
   padding: 12px 24px;
@@ -110,14 +118,12 @@ button, .btn, .btn-inscription {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  animation: popIn 0.6s ease-out;
 }
 
-button:hover, .btn:hover, .btn-inscription:hover {
-  background-color: #002b5c;
-  transform: scale(1.05);
+button:hover, .btn:hover {
+  background-color: #002f5c;
 }
 
 /* ==== FORMULAIRES ==== */
@@ -152,7 +158,7 @@ form label {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #003f7f;
+  background: #f7931e;
   border: none;
   padding: 14px;
   border-radius: 50%;
@@ -205,83 +211,20 @@ footer {
   }
 }
 
-/* ==== ANIMATIONS ==== */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes popIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.fade-up {
-  animation: fadeUp 1s ease-out both;
-}
-.fade-in {
-  animation: fadeIn 1s ease-out both;
-}
-.btn-franceconnect {
-  display: inline-flex;
-  align-items: center;
+/* ==== BOUTON INSCRIPTION ==== */
+.btn-inscription {
   background-color: #003f7f;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
   font-weight: bold;
-  font-size: 1rem;
-  padding: 12px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.btn-franceconnect:hover {
-  background-color: #002b5c;
-  transform: scale(1.05);
-}
-
-.logo-fc {
-  width: 24px;
-  height: auto;
-}
-/* ==== ZOOM ==== */
-.zoomed {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
+.btn-inscription:hover {
+  background-color: #002f5c;
 }
