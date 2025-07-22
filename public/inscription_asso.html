@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription - Association Inclusion Numérique</title>
+  <link rel="stylesheet" href="css/css_globale.css" />
+</head>
+<body>
+  <header>
+    <img src="image/logo.png" alt="Logo de l'association" class="logo" />
+    <h1>Inscription à l’Espace Membre</h1>
+  </header>
+  <nav>
+     <ul>
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="A_propos.html">À propos</a></li>
+  <li><a href="historique.html">Historique</a></li>
+  <li><a href="actualites.html">Actualités</a></li>
+  <li><a href="ateliers.html">Ateliers</a></li>
+  <li><a href="inscription.html">Inscription aux ateliers</a></li>
+  <li><a href="newsletter.html">Newsletter</a></li>
+  <li><a href="inscription_asso.html">Créer un compte</a></li>
+  <li><a href="connexion.html">Connexion</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+  </nav>
+     <!-- Bouton FranceConnect -->
+ <div style="text-align: center; margin-bottom: 30px;">
+  <a href="https://app.franceconnect.gouv.fr/api/v1/authorize?client_id=TON_CLIENT_ID&redirect_uri=TON_REDIRECT_URI&scope=openid&response_type=code"
+     class="btn-franceconnect"  title="Connexion via FranceConnect">
+    
+    <img src="image/franceID.webp" alt="Connexion via FranceConnect" />">
+    
+    <span>S'inscrire avec FranceConnect</span>
+  </a>
+</div>
+  <section>
+    <h2 class="titre-bleu">Créer un compte</h2>
+    <form action="/inscription" method="POST">
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required aria-label="Prénom" />
+
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required aria-label="Nom" />
+
+      <label for="email">Adresse email</label>
+      <input type="email" id="email" name="email" required aria-label="Adresse email" />
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" required minlength="6" aria-label="Mot de passe" />
+
+      <label for="confirmPassword">Confirmer le mot de passe</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6" aria-label="Confirmer le mot de passe" />
+
+      <label>
+        <input type="checkbox" required aria-label="Accepter les conditions" />
+        J’accepte les <a href="/politique-confidentialite" target="_blank">conditions et la politique de confidentialité</a>.
+      </label>
+
+      <button type="submit" class="btn-inscription">S’inscrire</button>
+    </form>
+    <p style="margin-top: 20px;">
+      Déjà membre ? <a href="connexion.html" class="btn-link">Connectez-vous ici</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Association Inclusion Numérique – Tous droits réservés.</p>
+  </footer>
+  
+  <script src="js/zoom.js"></script>
+  <script src="js/inscription.js"></script>
+</body>
+</html>

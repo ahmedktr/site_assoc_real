@@ -179,14 +179,25 @@ form label {
 }
 
 /* ==== FOOTER ==== */
+footer a {
+  color: #ffffff; /* ✅ couleur blanche */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffcc00; /* une jolie couleur d’accent au survol */
+  text-decoration: underline;
+}
 footer {
-  background-color: #003f7f;
-  color: #fff;
+  background: #003f7f;
+  color: #ffffff;
   text-align: center;
-  padding: 25px;
-  margin-top: 60px;
-  font-size: 0.9rem;
-  border-top: 3px solid #f7931e;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /* ==== RESPONSIVE ==== */
@@ -228,3 +239,61 @@ footer {
 .btn-inscription:hover {
   background-color: #002f5c;
 }
+.floating-inscription-btn {
+  position: fixed;
+  bottom: 100px; /* Position un peu en haut */
+  right: 24px;
+  background: linear-gradient(135deg, #003f7f, #0059b3);
+  color: #fff;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 100px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 63, 127, 0.3); /* ✅ corrigé ici */
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.floating-inscription-btn:hover {
+  background: linear-gradient(135deg, #002f5c, #004c99);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 63, 127, 0.4);
+}
+@media (max-width: 600px) {
+  .floating-inscription-btn {
+    bottom: 80px;
+    right: 16px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+}.btn-franceconnect {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #003f7f;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 63, 127, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 50px auto 30px; /* ✅ pour l'éloigner du haut, et centrer */
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.btn-franceconnect:hover {
+  background-color: #002f5c;
+  transform: translateY(-2px);
+}
+
+.btn-franceconnect img {
+  width: 24px;
+  height: 24px;
+}
+
+

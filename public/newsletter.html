@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/css_globale.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/css_globale.css" />
   <title>Inscription à la Newsletter - Inclusion Numérique</title>
 </head>
-<h1>Inscription à la Newsletter</h1>
-<header>
-    <img src="image/logo.png" alt="Logo de l'association">
+<body>
+
+  <header>
+    <img src="image/logo.png" alt="Logo de l'association" />
     <h1>Restez informé(e) !</h1>
   </header>
 
-<body>
+  <nav>
+ <ul>
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="A_propos.html">À propos</a></li>
+  <li><a href="historique.html">Historique</a></li>
+  <li><a href="actualites.html">Actualités</a></li>
+  <li><a href="ateliers.html">Ateliers</a></li>
+  <li><a href="inscription.html">Inscription aux ateliers</a></li>
+  <li><a href="newsletter.html">Newsletter</a></li>
+  <li><a href="inscription_asso.html">Créer un compte</a></li>
+  <li><a href="connexion.html">Connexion</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
 
-  
-
- <nav>
-      <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="actualites.html">Actualités</a></li>
-      <li><a href="historique.html">Historique</a></li>
-      <li><a href="A_propos.html">À propos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="inscription.html">Inscription</a></li>
-      <li><a href="connexion.html">Connexion</a></li>
-      <li><a href="newsletter.html">Newsletter</a></li>
-      <li><a href="ateliers.html">Ateliers</a></li>
-    </ul>
   </nav>
 
-  <p>
-    <h1>Restez informé(e) de nos prochains ateliers, actualités, et conseils pour mieux maîtriser le numérique.</h1>
-  </p>
+  <!-- SECTION ANIMÉE -->
+  <section class="fadein-section">
+    <h2 class="titre-bleu">
+      Restez informé(e) de nos prochains ateliers, actualités, et conseils pour mieux maîtriser le numérique.
+    </h2>
 
-  <form action="#" method="post">
-    <label for="name">Prénom :</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+    <form action="#" method="post">
+      <label for="name">Prénom :</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
-    <label for="email">Adresse e-mail :</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+      <label for="email">Adresse e-mail :</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
-    <button type="submit">Je m’inscris</button>
-  </form>
+      <button type="submit">Je m’inscris</button>
+    </form>
 
-  <p>
-    Vous pouvez vous désinscrire à tout moment via le lien présent dans nos emails.
-  </p>
+    <p style="margin-top: 20px;">
+      Vous pouvez vous désinscrire à tout moment via le lien présent dans nos emails.
+    </p>
+  </section>
 
   <footer>
     <p>© 2025 Association pour l’Inclusion Numérique</p>
+   
   </footer>
 
+  <script src="js/zoom.js"></script>
 </body>
-<script src="js/zoom.js"></script>
 </html>
