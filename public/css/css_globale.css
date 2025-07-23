@@ -1,16 +1,16 @@
-/* ==== GÉNÉRAL ==== */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x:au; /* Empêche le défilement horizontal */;
+  display: flex;
+  flex-direction: column;
+  /* Empêche le défilement horizontal */
 }
 
-
-/* Le contenu principal prend tout l’espace restant */
 main {
-  flex: 1;
+  flex: 1; /* Le contenu principal pousse le footer vers le bas */
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +24,9 @@ body {
   line-height: 1.7;
   font-size: 16px;
   padding-bottom: 60px;
-  overflow-x: hidden;
+  padding-bottom: 60px; /* Espace pour le footer */
+  overflow-y: auto; /* Permet le défilement vertical */
+  overflow-x: auto;
 }
 
 /* ==== HEADER ==== */
