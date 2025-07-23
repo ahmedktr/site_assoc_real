@@ -9,9 +9,11 @@ window.addEventListener("DOMContentLoaded", () => {
   `;
   document.body.appendChild(zoomBtn);
 
+  const wrapper = document.getElementById("zoom-wrapper");
   let zoomed = false;
+
   zoomBtn.addEventListener("click", () => {
-    document.body.style.fontSize = zoomed ? "1em" : "2.5em";  // ← ici on passe à x2.5
+    wrapper.style.transform = zoomed ? "scale(1)" : "scale(1.5)";
     zoomed = !zoomed;
   });
 });

@@ -1,4 +1,16 @@
 /* ==== GÉNÉRAL ==== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x:au; /* Empêche le défilement horizontal */;
+}
+
+
+/* Le contenu principal prend tout l’espace restant */
+main {
+  flex: 1;
+}
 * {
   margin: 0;
   padding: 0;
@@ -177,6 +189,12 @@ form label {
   height: 24px;
   fill: white;
 }
+#zoom-wrapper {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: top center;
+  width: 100%;
+}
+
 
 /* ==== FOOTER ==== */
 footer a {
@@ -223,25 +241,30 @@ footer {
 }
 
 /* ==== BOUTON INSCRIPTION ==== */
-.btn-inscription {
+
+.btn-creer-compte {
+  position: absolute;
+  top: 3px;
+  right: 2px;
   background-color: #003f7f;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: background-color 0.3s ease;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1001;
 }
 
-.btn-inscription:hover {
+.btn-creer-compte:hover {
   background-color: #002f5c;
 }
+
+
 .floating-inscription-btn {
   position: fixed;
-  bottom: 100px; /* Position un peu en haut */
+  bottom: 500px; /* Position un peu en haut */
   right: 24px;
   background: linear-gradient(135deg, #003f7f, #0059b3);
   color: #fff;
@@ -295,5 +318,24 @@ footer {
   width: 24px;
   height: 24px;
 }
+.btn-inscription {
+  background-color: #003f7f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-inscription:hover {
+  background-color: #002f5c;
+  transform: translateY(-2px);
+}
+
 
 

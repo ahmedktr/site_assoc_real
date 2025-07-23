@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div id="zoom-wrapper">
 
   <!-- Bouton zoom -->
   <button class="zoom-btn" onclick="toggleZoom()" title="Activer/Désactiver le zoom">
@@ -32,10 +33,11 @@
   <li><a href="ateliers.html">Ateliers</a></li>
   <li><a href="inscription.html">Inscription aux ateliers</a></li>
   <li><a href="newsletter.html">Newsletter</a></li>
-  <li><a href="inscription_asso.html">Créer un compte</a></li>
+ 
   <li><a href="connexion.html">Connexion</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
+<a href="inscription_asso.html" class="btn-creer-compte">Créer un compte</a>
 
   </nav>
 
@@ -44,7 +46,7 @@
   <section>
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <h2 class="titre-bleu">💼 Ateliers Compétences Numériques pour l’Emploi</h2>
-    <a href="inscription.html" class="btn-inscription">S’inscrire</a>
+    <a href="connexion.html" class="btn-inscription">S’inscrire</a>
   </div>
   <p class="highlight">Objectif :</p>
   
@@ -60,7 +62,7 @@
 <section>
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <h2 class="titre-bleu">🔒 Ateliers Sensibilisation à la Sécurité Numérique</h2>
-    <a href="inscription.html" class="btn-inscription">S’inscrire</a>
+    <a href="connexion.html" class="btn-inscription">S’inscrire</a>
   </div>
   <p class="highlight">Objectif :</p>
   <p>Comprendre les bonnes pratiques pour protéger ses données personnelles.</p>
@@ -74,7 +76,7 @@
 <section>
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <h2 class="titre-bleu">👥 Ateliers Personnalisés & Accompagnement Individuel</h2>
-    <a href="inscription.html" class="btn-inscription">S’inscrire</a>
+    <a href="connexion.html" class="btn-inscription">S’inscrire</a>
   </div>
   <p>Nous proposons des séances en petit groupe ou des accompagnements individuels adaptés aux besoins de chacun.</p>
   <p><em>Parce que l’inclusion numérique commence par l’écoute et le respect du parcours de chaque personne.</em></p>
@@ -84,10 +86,13 @@
 
   <!-- Pied de page -->
   <footer>
-    <p>✅ Tous nos ateliers sont gratuits et ouverts à tous.<br>
-    📩 Sur inscription — Places limitées pour garantir un accompagnement de qualité.</p>
+    <p>© 2025 Association pour l’Inclusion Numérique</p>
+    <p><a href="index.html">Mentions légales</a> | <a href="index.html">Politique de confidentialité</a></p>
   </footer>
+</div> <!-- Fin de #zoom-wrapper -->
 
+  <!-- Script pour le zoom -->
+  <script src="js/zoom.js"></script>
 </body>
 <script src="js/zoom.js"></script>
 </html>

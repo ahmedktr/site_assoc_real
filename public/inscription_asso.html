@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/css_globale.css" />
 </head>
 <body>
+    <div id="zoom-wrapper">
   <header>
     <img src="image/logo.png" alt="Logo de l'association" class="logo" />
     <h1>Inscription à l’Espace Membre</h1>
@@ -20,10 +21,11 @@
   <li><a href="ateliers.html">Ateliers</a></li>
   <li><a href="inscription.html">Inscription aux ateliers</a></li>
   <li><a href="newsletter.html">Newsletter</a></li>
-  <li><a href="inscription_asso.html">Créer un compte</a></li>
+  
   <li><a href="connexion.html">Connexion</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
+<a href="inscription_asso.html" class="btn-creer-compte">Créer un compte</a>
 
   </nav>
      <!-- Bouton FranceConnect -->
@@ -56,7 +58,9 @@
 
       <label>
         <input type="checkbox" required aria-label="Accepter les conditions" />
-        J’accepte les <a href="/politique-confidentialite" target="_blank">conditions et la politique de confidentialité</a>.
+        J’accepte les <a href="/politique-confidentialite" target="_blank">conditions et la politique de confidentialité</a>.<br>
+         <input type="checkbox" required aria-label="Accepter les conditions" />
+       Je souhaite recevoir la newsletter de l’association. Je pourrai me désabonner à tout moment. <a href="newsletter.html" target="_blank">En savoir plus</a>.
       </label>
 
       <button type="submit" class="btn-inscription">S’inscrire</button>
@@ -67,10 +71,14 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Association Inclusion Numérique – Tous droits réservés.</p>
+    <p>© 2025 Association pour l’Inclusion Numérique</p>
+    <p><a href="index.html">Mentions légales</a> | <a href="index.html">Politique de confidentialité</a></p>
   </footer>
+
   
-  <script src="js/zoom.js"></script>
-  <script src="js/inscription.js"></script>
+
+    </div>
+
 </body>
+  <script src="js/zoom.js"></script>
 </html>

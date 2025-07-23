@@ -3,85 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>À propos - Inclusion Numérique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/css_globale.css">
 </head>
 <body>
+  <div id="zoom-wrapper">
 
-  <!-- Bandeau haut -->
-  <header class="bandeau-haut">
-    <h1>A propos</h1>
-     <img src="image/logo.png" alt="Logo de l'association" />
-  </header>
+    <!-- Bandeau haut -->
+    <header class="bandeau-haut">
+      <h1>À propos</h1>
+      <img src="image/logo.png" alt="Logo de l'association" />
+    </header>
 
-  <!-- Menu de navigation -->
-  <nav class="menu-principal">
-   <ul>
-  <li><a href="index.html">Accueil</a></li>
-  <li><a href="A_propos.html">À propos</a></li>
-  <li><a href="historique.html">Historique</a></li>
-  <li><a href="actualites.html">Actualités</a></li>
-  <li><a href="ateliers.html">Ateliers</a></li>
-  <li><a href="inscription.html">Inscription aux ateliers</a></li>
-  <li><a href="newsletter.html">Newsletter</a></li>
-  <li><a href="inscription_asso.html">Créer un compte</a></li>
-  <li><a href="connexion.html">Connexion</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-
-  </nav>
-
-  <!-- Contenu principal -->
-  <main class="contenu-a-propos">
-
-    <!-- Section : Notre histoire -->
-  
-    <!-- Section : Notre équipe -->
-    <section class="bloc-orange">
-      <h2>Notre équipe :</h2>
-      <p>
-        Nous sommes une équipe de bénévoles, formateurs et coordinateurs passionnés, œuvrant ensemble pour accompagner les publics
-        en difficulté face au numérique.
-      </p>
+    <!-- Menu de navigation -->
+    <nav class="menu-principal">
       <ul>
-        <li>Bernard Dubois - Président</li>
-        <li>Sophie Laurent - Trésorière</li>
-        <li>Yassin Benali - Responsable communication</li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="A_propos.html">À propos</a></li>
+        <li><a href="historique.html">Historique</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="ateliers.html">Ateliers</a></li>
+        <li><a href="inscription.html">Inscription aux ateliers</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </section>
+      <a href="inscription_asso.html" class="btn-creer-compte">Créer un compte</a>
+    </nav>
 
-    <!-- Section : Nos valeurs -->
-    <section class="bloc-orange">
-      <h2>Nos valeurs :</h2>
-      <ul>
-        <li>Accessibilité pour tous</li>
-        <li>Solidarité et entraide</li>
-        <li>Respect de la vie privée et des données</li>
-        <li>Apprentissage par la pratique</li>
-      </ul>
-    </section>
+    <!-- Contenu principal -->
+    <main class="contenu-a-propos">
 
-    <!-- Section : Nos partenaires -->
-    <section class="bloc-orange">
-      <h2>Nos partenaires :</h2>
-      <ul>
-        <li>Mairie de Maubeuge</li>
-        <li>GRETA Grand Hainaut</li>
-        <li>Centre Social Maubeuge</li>
-      </ul>
-    </section>
+      <!-- Notre équipe -->
+      <section class="bloc-orange">
+        <h2>Notre équipe :</h2>
+        <p>
+          Nous sommes une équipe de bénévoles, formateurs et coordinateurs passionnés, œuvrant ensemble pour accompagner les publics
+          en difficulté face au numérique.
+        </p>
+        <ul>
+          <li>Bernard Dubois - Président</li>
+          <li>Sophie Laurent - Trésorière</li>
+          <li>Yassin Benali - Responsable communication</li>
+        </ul>
+      </section>
 
-  </main>
+      <!-- Nos valeurs -->
+      <section class="bloc-orange">
+        <h2>Nos valeurs :</h2>
+        <ul>
+          <li>Accessibilité pour tous</li>
+          <li>Solidarité et entraide</li>
+          <li>Respect de la vie privée et des données</li>
+          <li>Apprentissage par la pratique</li>
+        </ul>
+      </section>
 
-  <!-- Pied de page -->
-  <footer class="footer">
-    <p>© 2025 Association pour l’Inclusion Numérique</p>
-  </footer>
+      <!-- Nos partenaires -->
+      <section class="bloc-orange">
+        <h2>Nos partenaires :</h2>
+        <ul>
+          <li>Mairie de Maubeuge</li>
+          <li>GRETA Grand Hainaut</li>
+          <li>Centre Social Maubeuge</li>
+        </ul>
+      </section>
 
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>© 2025 Association pour l’Inclusion Numérique</p>
+      <p><a href="index.html">Mentions légales</a> | <a href="index.html">Politique de confidentialité</a></p>
+    </footer>
+
+  </div> <!-- fin de #zoom-wrapper -->
+
+  <!-- JS -->
+  <script src="js/zoom.js"></script>
+  <script>
+    function toggleZoom() {
+      document.body.classList.toggle('zoomed');
+    }
+  </script>
 </body>
 </html>
-<script src="js/zoom.js"></script>
-<script>
-  // Fonction pour activer/désactiver le zoom
-  function toggleZoom() {
-    document.body.classList.toggle('zoomed');
-  }
